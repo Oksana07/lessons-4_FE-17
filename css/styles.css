@@ -1,0 +1,46 @@
+:root{
+    --accent-color:#f34211;
+    --menu-color:#7D7D7D;
+    --link-color:#B4AD9E;
+    --title-color:#6bf210;
+    --text-color:#626262;
+    --cursor:pointer;
+    --bg-button: rgb(175, 77, 175);
+    --button-color:wheat;
+}
+
+.menu{
+    color: var(--menu-color);
+}
+
+.menu:hover,
+.menu:focus{
+    color: var(--accent-color);
+    cursor: var(--cursor);
+    
+}
+
+.link{
+    color: var(--link-color);
+}
+
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
+
+.title{
+
+    color: var(--title-color);
+}
+
+.text{
+   
+    color: var(--text-color);
+}
+
+.button{
+background-color: var(--bg-button);
+color: var(--button-color);
+cursor: var(--cursor);
+}
