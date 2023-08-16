@@ -1,46 +1,74 @@
-:root{
-    --accent-color:#f34211;
-    --menu-color:#7D7D7D;
-    --link-color:#B4AD9E;
-    --title-color:#6bf210;
-    --text-color:#626262;
-    --cursor:pointer;
-    --bg-button: rgb(175, 77, 175);
-    --button-color:wheat;
+:root {
+  --accent-color: #03A9F4;
+  --menu-color: #7d7d7d;
+  --link-color: #b4ad9e;
+  --title-color: #626262;
+  --text-color: #626262;
+  --cursor: pointer;
+  --bg-button: rgb(175, 77, 175);
+  --button-color: wheat;
 }
 
-.menu{
-    color: var(--menu-color);
+body {
+  font-family: "Playfair Display";
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-.menu:hover,
-.menu:focus{
-    color: var(--accent-color);
-    cursor: var(--cursor);
-    
+li {
+  list-style: none;
 }
 
-.link{
-    color: var(--link-color);
+a {
+  text-decoration: none;
 }
 
-.link:hover,
-.link:focus{
-    color: var(--accent-color);
+/* header */
+
+.header-menu-item {
+  color: var(--menu-color);
 }
 
-.title{
-
-    color: var(--title-color);
+.header-menu-item:hover,
+.header-menu-item:focus {
+  color: var(--accent-color);
+  cursor: var(--cursor);
 }
 
-.text{
-   
-    color: var(--text-color);
+/* Секція блогів */
+.blogs-link {
+  color: var(--link-color);
+  font-family: "Ubuntu";
+  font-weight: 300;
 }
 
-.button{
-background-color: var(--bg-button);
-color: var(--button-color);
-cursor: var(--cursor);
+.blogs-link:hover,
+.blogs-link:focus {
+  color: var(--accent-color);
 }
+
+.blogs-title {
+  color: var(--title-color);
+  font-size: 30px;
+}
+
+.blogs-text {
+  color: var(--text-color);
+}
+
+.blogs-button {
+  background-color: var(--bg-button);
+  color: var(--button-color);
+  cursor: var(--cursor);
+}
+
+/*  Специфічність*/
+/* #id-title {
+    color: blue;
+}
+
+section .title {
+    color: red;
+} */
