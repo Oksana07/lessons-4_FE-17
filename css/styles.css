@@ -45,7 +45,7 @@ a {
 }
 
 .blogs-link:hover,
-.blogs-link:focus {
+.blogs-link:focus{
   color: var(--accent-color);
 }
 
@@ -65,10 +65,95 @@ a {
 }
 
 /*  Специфічність*/
-/* #id-title {
+#id-title {
     color: blue;
 }
 
 section .title {
     color: red;
+}
+
+/*  pseudo classes*/
+/* .list-item:not(:last-child) */
+.list-item {
+  margin-bottom: 12px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* :nth-child(an+b)*/
+
+/* .list-item:nth-child(5) {
+  background-color: orange;
 } */
+
+/* Парні */
+
+/* .list-item:nth-child(2n) {
+  background-color: orange;
+} */
+
+/* АБО */
+/* .list-item:nth-child(even) {
+  background-color: orange;
+} */
+
+/*  непарні елементи */
+/* .list-item:nth-child(2n + 1) {
+  background-color: orange;
+} */
+/* АБО */
+/* Аналогічно, використовуючи псевдонім */
+/* .list-item:nth-child(odd) {
+  background-color: orange;
+} */
+
+/* Від N-го елемента​ */
+/* .list-item:nth-child(n + 6) {
+  background-color: orange;
+} */
+/* До N-го елемента */
+/* .list-item:nth-child(-n + 5) {
+  background-color: orange;
+} */
+
+/* Кожен N-й елемент */
+/* .list-item:nth-child(3n + 1) {
+  background-color: orange;
+} */
+
+/*  Творче завдання */
+.schedule-body>tr:hover {
+  background-color: tomato;
+  color: white;
+}
+
+/* Оформлення таблиці */
+.schedule {
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  padding: 8px;
+  border: 1px solid #212121;
+}
+
+/* вибирає перший селектор цього типу; */
+/* .schedule-body>tr:first-of-type {
+  background-color: tomato;
+  color: white;
+} */
+
+/* вибирає останній селектор цього типу; */
+/* .schedule-body>tr:last-of-type {
+  background-color: tomato;
+  color: white;
+} */
+
+
+
+
